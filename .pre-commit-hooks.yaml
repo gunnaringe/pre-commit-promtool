@@ -1,0 +1,7 @@
+- id: promtool-check-rules
+  name: Promtool check rules (using Dockerfile)
+  description: Check rules with promtool
+  language: docker
+  entry: check-rules.sh
+  types:
+    - yaml

@@ -1,14 +1,14 @@
 - id: promtool-check-rules
   name: Promtool check rules (using Docker image)
   description: Check rules with promtool
-  language: docker
-  entry: check-rules.sh
+  language: docker_image
+  entry: ghcr.io/gunnaringe/pre-commit-promtool:latest check-rules.sh
   types:
     - yaml
 - id: promtool-check-rules-dockerfile
-  name: Promtool check rules (using Dockerfile)
+  name: Promtool check rules (using Docker image)
   description: Check rules with promtool
-  language: docker_image
-  entry: ghcr.io/gunnaringe/pre-commit-promtool:latest check-rules.sh
+  language: docker
+  entry: check-rules.sh
   types:
     - yaml
